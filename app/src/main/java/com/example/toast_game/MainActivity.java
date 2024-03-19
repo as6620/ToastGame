@@ -109,6 +109,8 @@ public class MainActivity extends AppCompatActivity {
             eT3.setVisibility(View.VISIBLE);
             btn3.setVisibility(View.VISIBLE);
         }
+        else
+            Toast.makeText(this, "editText clear, you should enter number!", Toast.LENGTH_LONG).show();
     }
 
     public void clicked_eT3(View view) {
