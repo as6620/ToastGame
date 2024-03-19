@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.Random;
 
@@ -85,6 +86,8 @@ public class MainActivity extends AppCompatActivity {
             btn2.setVisibility(View.VISIBLE);
 
         }
+        else
+            Toast.makeText(this, "editText clear, you should enter number!", Toast.LENGTH_LONG).show();
     }
 
     public void clicked_eT2(View view) {
@@ -120,15 +123,17 @@ public class MainActivity extends AppCompatActivity {
                 iV3.setImageResource(R.drawable.incorrect);
 
             if (counter == 3)
-                btn4.setText("(3/3, 100%)");
+                Toast.makeText(this, "(3/3, 100%)", Toast.LENGTH_LONG).show();
             else if (counter == 2)
-                btn4.setText("(2/3 66%)");
+                Toast.makeText(this, "(2/3 66%)", Toast.LENGTH_LONG).show();
             else if (counter == 1)
-                btn4.setText("(1/3 33%)");
+                Toast.makeText(this, "(1/3 33%)", Toast.LENGTH_LONG).show();
             else
-                btn4.setText("(0/3 0%)");
+                Toast.makeText(this, "(0/3 0%)", Toast.LENGTH_LONG).show();
             btn4.setVisibility(View.VISIBLE);
         }
+        else
+            Toast.makeText(this, "editText clear, you should enter number!", Toast.LENGTH_LONG).show();
     }
     public void Restart(View view) {
 
